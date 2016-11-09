@@ -3,24 +3,41 @@
 {% block content %}
 
 	{% if form.errors %}
-	<p>Your username and password didn't match. Please try again.</p>
+	
+	<div class="alert alert-danger" role="alert">
+      <!--<p>{{ form.errors }}</p>-->
+      <p>Your username and password didn't match. Please try again.</p>
+    </div>
 	{% endif %}
 
-	<form method="post" action="{% url 'login' %}">
-	{% csrf_token %}
-	<table>
-	<tr>
-	    <td>{{ form.username.label_tag }}</td>
-	    <td>{{ form.username }}</td>
-	</tr>
-	<tr>
-	    <td>{{ form.password.label_tag }}</td>
-	    <td>{{ form.password }}</td>
-	</tr>
-	</table>
+	<h1>Acceso usuario</h1>
+	<hr>
 
-	<input type="submit" value="login" />
-	<input type="hidden" name="next" value="{{ next }}" />
+	<form method="post" class="form-horizontal" action="{% url 'login' %}">
+
+	    {% csrf_token %}
+
+	    <div class="form-group">
+	        <label for="inputusername" class="col-sm-2 control-label">{{ form.username.label_tag }}</label>
+	        <div class="col-sm-10">
+	          <span class="form-element">{{ form.username }}</span>
+	        </div>
+	    </div>
+
+	    <div class="form-group">
+	        <label for="inputPassword" class="col-sm-2 control-label">{{ form.password.label_tag }}</label>
+	        <div class="col-sm-10">
+	          <span class="form-element">{{ form.password }}</span>
+	        </div>
+	    </div>
+
+	    <div class="form-group">
+	        <div class="col-sm-offset-2 col-sm-10">
+	          <button type="submit" class="btn btn-default">Login</button>
+	          <input type="hidden" name="next" value="{{ next }}" />
+	        </div>
+	    </div>
+
 	</form>
 
 {% endblock %}

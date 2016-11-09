@@ -1,24 +1,20 @@
 .page-header {
-        background-color: #9aff9a;
-        margin-top: 0;
+        background: url(../img/home-bg.jpg) no-repeat center;
         padding: 50px 20px 20px 40px;
-        height: 200px;
+        height: 400px;
     }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-	display: inline;
-    color: ##27408b;
+	display: block;
+    text-align: center;
+    color: white;
     font-size: 46pt;
     text-decoration: none;
     font-family: 'Bungee Inline', cursive;
 }
 
-.glyphicon {
-	color: black;
-    font-size: 40px;
-    margin-top: 15px;
-    margin-left: 5px;
-    text-align: center;
+.navbar-brand {
+    font-family: 'Modak', cursive;
 }
 
 .content {
@@ -42,16 +38,9 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    
-    font-size: 25pt;
-    margin-right: 20px;
-}
-
 .post {
     margin-bottom: 70px;
-    border-bottom: 1px solid #cdc9c9;
+   /*border-bottom: 1px solid #cdc9c9;*/
 }
 
 .post h1 a, .post h1 a:visited {
@@ -61,4 +50,18 @@ h1, h2, h3, h4 {
 .registro {
     text-decoration: underline;
     color: black;
+}
+
+.post-text, .title {
+    font-family: 'Lobster', cursive;
+}
+
+.fecha {
+    font-size: 14px;
+}
+
+span.form-element input {
+    width: 600px;
+    height: 30px;
+    border-radius: 5px;
 }

@@ -4,7 +4,7 @@
 	<div class="col-md-8">
         <h1>New post</h1>
         <form method="POST" class="post-form">{% csrf_token %}
-            {{ form.as_p }}
+            {{ form.as_table }}
             <button type="submit" class="save btn btn-success">Save</button>
         </form>
     </div>
