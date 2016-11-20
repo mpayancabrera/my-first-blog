@@ -10,7 +10,7 @@ class PostForm(ModelForm):
 
     class Meta:
         model = Post
-        fields = ('title', 'text',)
+        fields = ('title', 'text', 'img')
 
 class SignUpForm(ModelForm):
     

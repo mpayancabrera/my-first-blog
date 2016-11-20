@@ -1,3 +1,7 @@
+body {
+    background-color: #faf0e6;
+}
+
 .page-header {
         background: url(../img/home-bg.jpg) no-repeat center;
         padding: 50px 20px 20px 40px;
@@ -14,11 +18,7 @@
 }
 
 .navbar-brand {
-    font-family: 'Modak', cursive;
-}
-
-.content {
-    margin-left: 40px;
+   font-family: 'Monofett', cursive;
 }
 
 h1, h2, h3, h4 {
@@ -40,7 +40,6 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
-   /*border-bottom: 1px solid #cdc9c9;*/
 }
 
 .post h1 a, .post h1 a:visited {
@@ -52,8 +51,13 @@ h1, h2, h3, h4 {
     color: black;
 }
 
-.post-text, .title {
+.title {
     font-family: 'Lobster', cursive;
+}
+
+.post-text {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 }
 
 .fecha {
@@ -64,4 +68,46 @@ span.form-element input {
     width: 600px;
     height: 30px;
     border-radius: 5px;
+}
+
+td input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.table>tbody>tr>td {
+    border-top: none;
+}
+
+form button {
+    margin-left: 5px;
+}
+
+.panel-footer {
+    vertical-align: middle;
+}
+
+.footer {
+    text-align: center;
+}
+
+.icon-plus {
+    height: 30px;
+    width: 30px;
+}
+
+.actions a {
+    text-align: center;
+}
+
+.noticias {
+    background-color: white;
+}
+.photo {
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-bottom: 20px;
 }
